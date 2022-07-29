@@ -1,5 +1,6 @@
 
 module.exports = function towelSort (matrix) {
+  if (typeof matrix !== "undefined") {
   let mass = [];
   for (let i = 0; i < matrix.length; i++){
       if (i % 2 === 0) {
@@ -13,4 +14,8 @@ module.exports = function towelSort (matrix) {
       }
   }
   return mass;
+  } else {
+  return [];
+  }
+
 }
